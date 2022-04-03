@@ -1,0 +1,348 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-container{
+   margin-left: 8%;
+   margin-right: 8%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   margin-top: 2%;
+   margin-bottom: 1%;
+   /* position: relative; */
+}
+#grid-container1{
+    width: 45%;
+    height: 100vh;
+    display: grid;
+    grid-row-gap: 15px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 20% 50% 10% 20%;
+}
+#grid-container2{
+    width: 45%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap: 30px;
+    grid-template-rows: 20% 95%;
+}
+.grid-item{
+    font-size: 35px;
+    /* width: 100%; */
+  
+}
+#clock-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 520px;
+    /* background-color: rebeccapurple; */
+}
+#clock-pic{
+    /* display: inline; */
+    margin: 20px;
+    height: 60px;
+    width: 140px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(./assests/clock.png);
+    background-position: center;
+
+    
+}
+#top-text{
+    font-size: 12px;
+    display: flex;
+    text-align: center;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    padding: 5px;
+    width: 30%;
+    color: #858585;
+    background-color: white;
+    margin-left: 50px;
+    height: 50%;
+    margin-top: -10px;
+    opacity: .9;
+}
+#div1{
+    background-image: url(./assests/sun.png);
+    height: 100%;
+    width: 20%;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+   
+  
+    
+}
+
+#div2{
+    height: 100%;
+    width: 20%;
+    background-image: url(./assests/spoon.png);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+#div3{
+    background-image: url(./assests/Zimage.png);
+    height: 100%;
+    width: 20%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    
+}
+#div4{
+    background-image: url(./assests/spoon.png);
+    height: 100%;
+    width: 20%;
+    background-repeat: no-repeat;
+    /* background-size: 100% 100%; */
+    background-position: center;
+
+    
+}
+#left-second-container{
+
+   height: 50vh;
+ /* border: 2px solid red; */
+ width: 100%;
+ background-color: white;
+ grid-column-start: 1;
+ grid-column-end: 3;
+ margin-top: -40px;
+ border-radius: 10px;
+ position: relative;
+}
+.left-second-container-inner{
+  
+   display: flex;
+   flex-direction: row;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 25%;
+    position: relative;
+}
+.left-second-container-option{
+  width: 70%;
+  height: 100%;
+  background-position: center;
+  color: #3D087B;
+
+  /* padding-left: 5%; */
+   /* display: inline-block; */
+    padding-top: 5px;
+    position: relative;
+
+    
+}
+#wakeUpTimeSelector{
+    padding-inline: 20px;
+    margin-left: 8%;
+    color: #3D087BDE;
+}
+#lunchTimeSelector{
+    padding-inline: 20px;
+    color: #3D087BDE;
+    margin-left: 14%;
+}
+#napTimeSelector{
+    padding-inline: 20px;
+    margin-left: 10%;
+    color: #3D087BDE;
+
+}
+#sleepTimeSelector{
+    padding-inline: 20px;
+    margin-left: 15%;
+    color: #3D087BDE;
+
+}
+#morning-text{
+    margin-top: 10px;
+   padding-top: 12px;
+   padding-left: 20px;
+    color: white;
+    top: 500px;
+    left: 124px;
+    width: 510px;
+    height: 54px;
+    font-size: 20px;
+    background-color: #8e53f0;
+    font-weight: bold;
+    /* border: 1px solid var(--unnamed-color-ededed); */
+    border-radius: 10px;
+    
+}
+#set-time{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    width: 45%;
+    height: 40px;
+    position: relative;
+    padding-top: 5px;
+    border-radius: 10px;
+    background-image: linear-gradient(113deg,#6E54EC,#CB52F8,#FC5EFF,#F147C5);
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600) var(--unnamed-font-size-24)/var();
+    color: white;
+}
+
+#set-time :hover{
+    background-image: linear-gradient(-113deg,#6E54EC,#CB52F8,#FC5EFF,#F147C5);
+}
+#alarm-time-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#time-summary{
+    margin-top: 10px;
+    margin-left: 5px;
+    display: flex;
+    font-size: 13px;
+    color: #F25CFE;
+    width: 45%;
+    border-radius: 10px;
+    /* grid-column-start: 3;
+    grid-column-end: 5; */
+    background-color: #854be0;
+
+    padding: 10px;
+}
+#digital-clock{
+    /* border: 2px solid red; */
+    position: relative;
+    border-radius: 10px;
+    background-color: #EDEDED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+
+
+}
+#right-bottom-container{
+    position: relative;
+    /* border: 3px solid red; */
+}
+#text-container{
+    /* border: 5px solid green; */
+    position: relative;
+    top: 0px;
+    background-color: white;
+    padding-left: 5%;
+    padding-top: 5%;
+    width: 100%;
+    height: 20%;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 10px;
+    /* border-top-right-radius: 10px; */
+    color: #8e53f0;
+}
+
+#img-container{
+    /* border: 10px solid black; */
+    /* position: absolute; */
+    margin-top: 10px;
+    width: 100%;
+    height: 80%;
+    background-color: white;
+    background-image: url(./assests/Cage.png);
+    /* background-repeat: no-repeat; */
+    background-size: 100% 100%;
+    background-position: center;
+    border-radius: 10px;
+    /* border-bottom-right-radius: 10px; */
+}
+#dynamic-block{
+    height: 40px;
+    margin-top: 65px;
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+    width: 40%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    /* border: 2px solid red; */
+    background-color: #F147C5;
+    color: white;
+    text-align: center;
+
+}
+#lb1{
+    width: 70%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 10%;
+    background-color: #FFFFFF;
+    top: 10px;
+    position: absolute;
+    opacity: .5;
+
+}
+#lb2{
+    width: 70%;
+    height: 100%;
+    z-index: -2;
+    border-radius: 10%;
+    background-color: #FFFFFF;
+    top: 20px;
+    position: absolute;
+    opacity: .7;
+
+}
+#clock1{
+    padding-right: 40px;
+    width: 15%;
+    height: 80%;
+    float: left;
+    display: flex;
+    color: #3D087B;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+#clock2{
+    border-radius: 5px;
+    width: 12%;
+    height: 80%;
+    float: left;
+   padding-top: 10px;
+    background-color: violet;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: .5;
+
+}
+#clock3{
+    border-radius: 10px;
+    width: 15%;
+    height: 80%;
+    float: left;
+   padding-top: 10px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(./assests/Ambgimg.png);
+    /* opacity: .5; */
+
+}
+
+
+@media(max-width: 800px){
+    .main-container{
+        justify-content: flex-start;
+    }
+}
